@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:hint="Enter for Search"
+            android:id="@+id/etSearch"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:padding="3dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#2A6BD3"
+            android:text="SEARCH"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a3a3a3"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
